@@ -167,11 +167,13 @@ nav{background-color: #3f4c77;
     padding: 10px 10%;
 }
 #card-area{
-    padding: 50px 0;
+    padding: 50px 0; 
 }
 .box-area{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(300px, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -184,6 +186,7 @@ nav{background-color: #3f4c77;
 	position: relative;
 	overflow: hidden;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  z-index: 998;
 }
 .box img {
 	width: 100%;
